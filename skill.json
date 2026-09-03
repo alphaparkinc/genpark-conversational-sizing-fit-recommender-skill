@@ -1,0 +1,45 @@
+{
+  "name": "genpark-conversational-sizing-fit-recommender-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational apparel sizing and garment fit recommender with cross-brand matrix conversion and return-risk reduction.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "size-recommender",
+    "apparel-fit",
+    "amazon-rufus",
+    "shop-ai",
+    "virtual-fitting"
+  ],
+  "inputs": {
+    "user_height_cm": {
+      "type": "integer"
+    },
+    "user_weight_kg": {
+      "type": "integer"
+    },
+    "garment_type": {
+      "type": "string"
+    },
+    "user_fit_preference": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "fit_recommendation_id": {
+      "type": "string"
+    },
+    "recommended_size": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "fit_profile_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
